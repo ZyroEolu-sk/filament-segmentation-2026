@@ -55,6 +55,10 @@ Cross-device floating-point differences can affect contour pixels. The report
 therefore records both exact-row equality and decoded prediction-agreement PQ.
 Agreement with a previous prediction file is **not** test-set accuracy.
 
+Full reproduction was verified on 14 November 2026: fresh CUDA inference over all
+180 test images produced both accepted CSVs byte for byte. Evidence is in
+`metadata/full_reproduction.json`.
+
 For a CPU smoke test after restoring weights and placing the official data under
 `data/MAGFiLO_1.0_Kaggle_2026/`:
 

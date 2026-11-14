@@ -1,0 +1,24 @@
+{
+  "full_dataset": true,
+  "images": 180,
+  "device": "cuda",
+  "torch": "2.10.0+cu128",
+  "checkpoint_manifest_sha256": "75e0de97c0cc367c0fe28168c2bd8f076c8fc51512cdfcc67a4e0cf4a315831f",
+  "reference_used_for_inference": false,
+  "variants": {
+    "match": {
+      "rows": 1214,
+      "sha256": "7bcac7590739b8d737772a56a4e56a9f3915122e5772b1a6995e5bd319661be0",
+      "exact_rows": true,
+      "prediction_agreement_pq": 1.0,
+      "agreement_note": "Comparison with submitted predictions, not test accuracy"
+    },
+    "eiou": {
+      "rows": 1221,
+      "sha256": "7e4d93258cffcc1833e4a2cd9b4cf90d901a9746e180880db9b0e31c8fa5de92",
+      "exact_rows": true,
+      "prediction_agreement_pq": 1.0,
+      "agreement_note": "Comparison with submitted predictions, not test accuracy"
+    }
+  }
+}

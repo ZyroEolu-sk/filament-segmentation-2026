@@ -8,5 +8,5 @@
     "passed": 29,
     "subtests_passed": 4
   },
-  "full_reproduction": "pending GPU; single-image CPU smoke exact for both variants"
+  "full_reproduction": "180 images on CUDA; both CSVs byte-identical to accepted submissions"
 }
