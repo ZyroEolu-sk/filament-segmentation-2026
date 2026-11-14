@@ -1,0 +1,142 @@
+[
+  {
+    "target": "runs/r50-long/best.pt",
+    "sha256": "6507b76e4fcd4053ebb91ccf5f60f75dea722e6443bb7b0d7328e9907d6451c0",
+    "size": 130393473,
+    "parts": [
+      {
+        "path": "weights/r50-long/part-000.bin",
+        "sha256": "d6f2fdce63cb60e39385ee7b45ec62576c68027672aa3d01dc69cdb39a9e8b02",
+        "size": 50331648
+      },
+      {
+        "path": "weights/r50-long/part-001.bin",
+        "sha256": "b18ffb2ef6de3e41d4cb8e89e72fa73331334c31d894857b92671b871fd4ae36",
+        "size": 50331648
+      },
+      {
+        "path": "weights/r50-long/part-002.bin",
+        "sha256": "e01c88a189de38b8c681a6c615536c249fbe5dfd5e37acb00754be8d245529b8",
+        "size": 29730177
+      }
+    ]
+  },
+  {
+    "target": "runs/cnx-s-bce/best.pt",
+    "sha256": "50ca2364335ca4170740ef854fb7eb5145c91dcbe40b9581a91f6270e0e8efc7",
+    "size": 214392979,
+    "parts": [
+      {
+        "path": "weights/cnx-s-bce/part-000.bin",
+        "sha256": "b3e079ced6ffdced62f4aabd0e136f8e88c672d2c5a965ce62a03cc67e9516a6",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-bce/part-001.bin",
+        "sha256": "8d5b06ecd27eff0b368c1bc9020b05322288a9a90d30ff8eb3a8e49caec4ac99",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-bce/part-002.bin",
+        "sha256": "cd34d14b673d8f1a44cf8c2027e13d0c426f87ba818cdf54b194a66c48852f31",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-bce/part-003.bin",
+        "sha256": "62093ea95d8cf6ea4c03ba886e75a67c5e9e309766186c2dbfcddfc9b762816e",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-bce/part-004.bin",
+        "sha256": "6e7096c65150055566cfb159d6a5f319e346ead6796b63c49be03cd0259b1502",
+        "size": 13066387
+      }
+    ]
+  },
+  {
+    "target": "runs/cnx-s-long/best.pt",
+    "sha256": "b9fef283015e8e504b32091b5c39851389b55fdd7b3d49d671de7247e326c56d",
+    "size": 214393043,
+    "parts": [
+      {
+        "path": "weights/cnx-s-long/part-000.bin",
+        "sha256": "ccbddf33ab31835b2dae110dc24d384bc7143e59fb5af10891325df7695a7d1c",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-long/part-001.bin",
+        "sha256": "b570add6402262f574e399513c74d1b0557218705127ee72becb9ea6e15370bf",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-long/part-002.bin",
+        "sha256": "ca475924b559e40fcfbc30d3592c5651bb780f91569a1c650850a588e95af06c",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-long/part-003.bin",
+        "sha256": "cdde4ecfe457217954a63147fccd717b520b7014166d78de71b34e4a07e56b44",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-long/part-004.bin",
+        "sha256": "2ddca60d0703050d7dce003ef06bb3bc4b45f441f79e5b04c6a65ac8a40b9f17",
+        "size": 13066451
+      }
+    ]
+  },
+  {
+    "target": "runs/r50-consensus/best.pt",
+    "sha256": "71de8a34016ac41d844bfff80b1914cad3a17466ccc318e516103dffa932e3c4",
+    "size": 130393537,
+    "parts": [
+      {
+        "path": "weights/r50-consensus/part-000.bin",
+        "sha256": "58eafdbb8e13a9e7a738b00a409982cd2bb946b69d7f0bb4c02f2081af6be37f",
+        "size": 50331648
+      },
+      {
+        "path": "weights/r50-consensus/part-001.bin",
+        "sha256": "0a678fc0d6a53bec8fac0a33f10f21b0a1cb6e7935f544ca6dd14b481d1f812d",
+        "size": 50331648
+      },
+      {
+        "path": "weights/r50-consensus/part-002.bin",
+        "sha256": "b068e89397e4b3bce6f1eefd39cf011fee20b80cade1fb4e192c16338bad96dd",
+        "size": 29730241
+      }
+    ]
+  },
+  {
+    "target": "runs/cnx-s-consensus/best.pt",
+    "sha256": "3adda27792d594ad64378ff173bd9309e2a19324a558a3672f89d9aefd82edc3",
+    "size": 214393043,
+    "parts": [
+      {
+        "path": "weights/cnx-s-consensus/part-000.bin",
+        "sha256": "0f4574f2134dfb98c9e915bf5c52b7480d05cc42027bc772b55c30137b86dbfa",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-consensus/part-001.bin",
+        "sha256": "cd1cab89a957798631122078530efba46a600c9556fa94af64623998ba2153bf",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-consensus/part-002.bin",
+        "sha256": "aef45520c04cd1c64f595d5cd8969cad811e6ddfa9361b7d0f8baab885ebce8e",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-consensus/part-003.bin",
+        "sha256": "80b6bf4a9df83a1cf45b0839bdbbef10b0e2f7f3b9bf38a83ff86645c839b2b8",
+        "size": 50331648
+      },
+      {
+        "path": "weights/cnx-s-consensus/part-004.bin",
+        "sha256": "cac8974c9f85ad87208417acc5f871cf46a7724709ab01b74d41882bb06d7816",
+        "size": 13066451
+      }
+    ]
+  }
+]

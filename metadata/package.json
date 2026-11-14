@@ -1,0 +1,18 @@
+{
+  "members": [
+    "r50-long",
+    "cnx-s-bce",
+    "cnx-s-long",
+    "r50-consensus",
+    "cnx-s-consensus"
+  ],
+  "author": "Shengkai Zhu",
+  "affiliation": "Independent researcher",
+  "checkpoint_bytes": 903966075,
+  "weight_parts": 21,
+  "source_commit": "98c1e4f",
+  "source_modified": true,
+  "publication_status": "prepared locally; not published",
+  "template_status": "ACM sigconf draft; organizer Overleaf project could not be retrieved",
+  "model_scope": "accepted ens5c baseline; later transformer candidates require a separate report update"
+}

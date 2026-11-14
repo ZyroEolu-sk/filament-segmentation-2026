@@ -1,0 +1,9 @@
+{
+  "csv": "outputs/submission_ens5c_rescore_eiou.csv",
+  "sha256": "7e4d93258cffcc1833e4a2cd9b4cf90d901a9746e180880db9b0e31c8fa5de92",
+  "rows": 1221,
+  "observations": 180,
+  "overlapping_pixels": 0,
+  "errors": [],
+  "passed": true
+}

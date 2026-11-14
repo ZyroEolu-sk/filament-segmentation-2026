@@ -1,0 +1,12 @@
+{
+  "pdf_pages": 4,
+  "notebook_valid": true,
+  "weight_hashes_verified": 5,
+  "secret_pattern_hits": 0,
+  "largest_file_bytes": 50331648,
+  "package_tests": {
+    "passed": 29,
+    "subtests_passed": 4
+  },
+  "full_reproduction": "pending GPU; single-image CPU smoke exact for both variants"
+}

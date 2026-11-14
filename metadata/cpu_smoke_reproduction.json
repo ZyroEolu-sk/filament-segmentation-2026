@@ -1,0 +1,24 @@
+{
+  "full_dataset": false,
+  "images": 1,
+  "device": "cpu",
+  "torch": "2.10.0+cu128",
+  "checkpoint_manifest_sha256": "75e0de97c0cc367c0fe28168c2bd8f076c8fc51512cdfcc67a4e0cf4a315831f",
+  "reference_used_for_inference": false,
+  "variants": {
+    "match": {
+      "rows": 3,
+      "sha256": "7b9b2f538b3a6b24ff261b1d9e44633b0ed9656340d1a55ee059cb5bc7285858",
+      "exact_rows": true,
+      "prediction_agreement_pq": 1.0,
+      "agreement_note": "Comparison with submitted predictions, not test accuracy"
+    },
+    "eiou": {
+      "rows": 3,
+      "sha256": "7b9b2f538b3a6b24ff261b1d9e44633b0ed9656340d1a55ee059cb5bc7285858",
+      "exact_rows": true,
+      "prediction_agreement_pq": 1.0,
+      "agreement_note": "Comparison with submitted predictions, not test accuracy"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "label": "Expected-IoU rescorer",
+    "candidate": "ens5c",
+    "baseline": "ens5c",
+    "variant": "expected_iou_year",
+    "baseline_variant": "match_year",
+    "min_keep": 1,
+    "candidate_pq": 0.4723601689209423,
+    "baseline_pq": 0.4740378590231678,
+    "delta": -0.0016776901022255153,
+    "paired_bootstrap_95": [
+      -0.00587199565917017,
+      0.0026015694764798406
+    ],
+    "repetitions": 20000,
+    "seed": 20260926,
+    "positive_lower_bound": false,
+    "limitation": "Intervalo condicional a predicciones/folds; no corrige selecci\u00f3n previa ni comparaciones m\u00faltiples. No autoriza un env\u00edo autom\u00e1ticamente."
+  },
+  {
+    "label": "Add YOLO candidates",
+    "candidate": "ens5c",
+    "baseline": "ens5c",
+    "variant": "match_year",
+    "baseline_variant": "match_year",
+    "min_keep": 1,
+    "candidate_pq": 0.47414185185095753,
+    "baseline_pq": 0.4740378590231678,
+    "delta": 0.00010399282778972285,
+    "paired_bootstrap_95": [
+      -0.004758873044434821,
+      0.005207973338561042
+    ],
+    "repetitions": 20000,
+    "seed": 20260926,
+    "positive_lower_bound": false,
+    "limitation": "Intervalo condicional a predicciones/folds; no corrige selecci\u00f3n previa ni comparaciones m\u00faltiples. No autoriza un env\u00edo autom\u00e1ticamente."
+  },
+  {
+    "label": "YOLO + confidence",
+    "candidate": "ens5c",
+    "baseline": "ens5c",
+    "variant": "match_year",
+    "baseline_variant": "match_year",
+    "min_keep": 1,
+    "candidate_pq": 0.47228096791011276,
+    "baseline_pq": 0.4740378590231678,
+    "delta": -0.001756891113055048,
+    "paired_bootstrap_95": [
+      -0.007108728764755072,
+      0.0036762056195543693
+    ],
+    "repetitions": 20000,
+    "seed": 20260926,
+    "positive_lower_bound": false,
+    "limitation": "Intervalo condicional a predicciones/folds; no corrige selecci\u00f3n previa ni comparaciones m\u00faltiples. No autoriza un env\u00edo autom\u00e1ticamente."
+  },
+  {
+    "label": "Selective 8-view TTA",
+    "candidate": "tta8-cnx-s-bce",
+    "baseline": "ens5c",
+    "variant": "match_year",
+    "baseline_variant": "match_year",
+    "min_keep": 1,
+    "candidate_pq": 0.47259595186376446,
+    "baseline_pq": 0.4740378590231678,
+    "delta": -0.001441907159403344,
+    "paired_bootstrap_95": [
+      -0.00676852568265552,
+      0.003999226975064581
+    ],
+    "repetitions": 20000,
+    "seed": 20260926,
+    "positive_lower_bound": false,
+    "limitation": "Intervalo condicional a predicciones/folds; no corrige selecci\u00f3n previa ni comparaciones m\u00faltiples. No autoriza un env\u00edo autom\u00e1ticamente."
+  },
+  {
+    "label": "Four-model ensemble",
+    "candidate": "ens4",
+    "baseline": "ens5c",
+    "variant": "match_year",
+    "baseline_variant": "match_year",
+    "min_keep": 1,
+    "candidate_pq": 0.47002111138234326,
+    "baseline_pq": 0.4740378590231678,
+    "delta": -0.004016747640824547,
+    "paired_bootstrap_95": [
+      -0.012878898724242497,
+      0.004951428795611914
+    ],
+    "repetitions": 20000,
+    "seed": 20260926,
+    "positive_lower_bound": false,
+    "limitation": "Intervalo condicional a predicciones/folds; no corrige selecci\u00f3n previa ni comparaciones m\u00faltiples. No autoriza un env\u00edo autom\u00e1ticamente."
+  }
+]

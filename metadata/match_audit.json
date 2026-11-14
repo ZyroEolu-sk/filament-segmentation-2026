@@ -1,0 +1,9 @@
+{
+  "csv": "outputs/submission_ens5c_rescore_match.csv",
+  "sha256": "7bcac7590739b8d737772a56a4e56a9f3915122e5772b1a6995e5bd319661be0",
+  "rows": 1214,
+  "observations": 180,
+  "overlapping_pixels": 0,
+  "errors": [],
+  "passed": true
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "stem": "20160602010754Uh",
+    "predictions": 4,
+    "crop": [
+      297,
+      760,
+      320
+    ],
+    "selection": "quartile of predicted instance count; largest predicted filament crop"
+  },
+  {
+    "stem": "20110531070514Th",
+    "predictions": 7,
+    "crop": [
+      1527,
+      998,
+      354
+    ],
+    "selection": "quartile of predicted instance count; largest predicted filament crop"
+  },
+  {
+    "stem": "20110408083214Th",
+    "predictions": 10,
+    "crop": [
+      601,
+      1213,
+      353
+    ],
+    "selection": "quartile of predicted instance count; largest predicted filament crop"
+  }
+]
