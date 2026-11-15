@@ -1,6 +1,6 @@
 # Solar Filament Segmentation Challenge 2026 — ens5c
 
-Shengkai Zhu, independent researcher.
+Shengkai Zhu.
 
 This repository reproduces two accepted competition submissions with public PQ **0.40**:
 
