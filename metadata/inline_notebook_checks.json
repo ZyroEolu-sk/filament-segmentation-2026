@@ -1,0 +1,86 @@
+{
+  "notebook_sha256": "41465fce5bd3aae97307c39e9ce0361276a0adc0a95f4e267473cb8875ab9657",
+  "verified_utc": "2026-11-16T10:33:28Z",
+  "execution": "All cells in a fresh Jupyter kernel, CPU, one real official test image",
+  "source_directories_absent": true,
+  "offline": true,
+  "equivalent_definitions": [
+    "src/filaments/rle.py:encode_counts",
+    "src/filaments/rle.py:decode_counts",
+    "src/filaments/rle.py:polygon_to_mask",
+    "src/filaments/data.py:Observation",
+    "src/filaments/data.py:load_observations",
+    "src/filaments/data.py:split",
+    "src/filaments/data.py:rasterize",
+    "src/filaments/data.py:read_image",
+    "src/filaments/device.py:pick",
+    "src/filaments/device.py:autocast",
+    "src/filaments/model.py:FilamentNet",
+    "src/filaments/model.py:build",
+    "src/filaments/infer.py:predict",
+    "src/filaments/infer.py:predict_tiled",
+    "src/filaments/postprocess.py:PostCfg",
+    "src/filaments/postprocess.py:instances",
+    "src/filaments/postprocess.py:_merge_fragments",
+    "src/filaments/postprocess.py:_filter",
+    "src/filaments/rescore.py:candidates",
+    "src/filaments/rescore.py:disk",
+    "src/filaments/rescore.py:features",
+    "src/filaments/rescore.py:keep",
+    "src/filaments/submission.py:build_submission",
+    "src/filaments/submission.py:validate",
+    "scripts/restore_weights.py:sha",
+    "scripts/restore_weights.py:restore_weights",
+    "scripts/prepare_cache.py:cache_image",
+    "scripts/prepare_cache.py:cache_label",
+    "scripts/final_submission_audit.py:audit"
+  ],
+  "elapsed_seconds": 255.04,
+  "reproduction": {
+    "full_dataset": false,
+    "images": 1,
+    "device": "cpu",
+    "torch": "2.10.0+cu128",
+    "checkpoint_manifest_sha256": "75e0de97c0cc367c0fe28168c2bd8f076c8fc51512cdfcc67a4e0cf4a315831f",
+    "reference_used_for_inference": false,
+    "variants": {
+      "match": {
+        "rows": 3,
+        "sha256": "7b9b2f538b3a6b24ff261b1d9e44633b0ed9656340d1a55ee059cb5bc7285858",
+        "exact_rows": true,
+        "prediction_agreement_pq": 1.0,
+        "agreement_note": "Comparison with submitted predictions, not test accuracy"
+      },
+      "eiou": {
+        "rows": 3,
+        "sha256": "7b9b2f538b3a6b24ff261b1d9e44633b0ed9656340d1a55ee059cb5bc7285858",
+        "exact_rows": true,
+        "prediction_agreement_pq": 1.0,
+        "agreement_note": "Comparison with submitted predictions, not test accuracy"
+      }
+    }
+  },
+  "audits": {
+    "match": {
+      "csv": "smoke_submission_ens5c_rescore_match.csv",
+      "sha256": "7b9b2f538b3a6b24ff261b1d9e44633b0ed9656340d1a55ee059cb5bc7285858",
+      "rows": 3,
+      "observations": 1,
+      "overlapping_pixels": 0,
+      "errors": [],
+      "passed": true,
+      "full_dataset": false
+    },
+    "eiou": {
+      "csv": "smoke_submission_ens5c_rescore_eiou.csv",
+      "sha256": "7b9b2f538b3a6b24ff261b1d9e44633b0ed9656340d1a55ee059cb5bc7285858",
+      "rows": 3,
+      "observations": 1,
+      "overlapping_pixels": 0,
+      "errors": [],
+      "passed": true,
+      "full_dataset": false
+    }
+  },
+  "limitation": "Full 180-image inference was not rerun for the notebook conversion; prior full script reproduction is stored separately."
+}

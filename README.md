@@ -30,10 +30,15 @@ Obtain the official data from the [competition data page](https://www.kaggle.com
 after accepting its terms. Set `FILAMENT_DATA_ROOT` to the directory containing
 `train/` and `test/`. Run all cells of **[reproduce.ipynb](reproduce.ipynb)** from
 the repository root. Kaggle's competition input mount is detected automatically.
+The notebook contains the complete inference implementation in readable cells:
+checkpoint reconstruction, image loading and split verification, U-Net definitions,
+four-flip TTA, watershed, candidate features, rescoring, COCO RLE and audits.
+It does not call external Python scripts or import the local `filaments` package.
+Model weights, JSON configurations and fitted rescorers remain repository assets.
 The notebook:
 
 1. Reconstructs the exact five checkpoints from the included weight chunks and verifies SHA-256 hashes.
-2. Creates image/label caches from the official data and checks the original 601/106 observation split.
+2. Reads the official data and checks the original 601/106 observation split. Image/label cache creation is optional (`BUILD_TRAINING_CACHE=True`); inference reads the original images directly.
 3. Performs fresh image inference with the five trained models; both rescorers share that pass.
 4. Writes both CSVs, checks nonempty RLE, image coverage, unique IDs and non-overlapping masks, and measures agreement with the accepted reference predictions.
 
@@ -59,8 +64,17 @@ Full reproduction was verified on 14 November 2026: fresh CUDA inference over al
 180 test images produced both accepted CSVs byte for byte. Evidence is in
 `metadata/full_reproduction.json`.
 
-For a CPU smoke test after restoring weights and placing the official data under
-`data/MAGFiLO_1.0_Kaggle_2026/`:
+The self-contained notebook was checked on 16 November 2026 in a fresh Jupyter
+kernel, in a directory without `src/` or `scripts/`. All cells ran on one real
+test image using CPU; both variants exactly matched the accepted rows and passed
+the structural audits. The 29 embedded functions/classes match the original
+implementations. See `metadata/inline_notebook_checks.json`. This conversion check
+does not constitute a new full 180-image inference run.
+
+For a CPU smoke test, set `DEVICE="cpu"` and `LIMIT=1` in the notebook's
+configuration cell, then run all cells. Alternatively, set `FILAMENT_DEVICE=cpu`
+and `FILAMENT_LIMIT=1` before starting the kernel. Checkpoints are restored by
+the notebook itself. The original command-line entry points remain available:
 
 ```bash
 python scripts/restore_weights.py
@@ -68,6 +82,10 @@ python scripts/reproduce_predictions.py --device cpu --limit 1
 ```
 
 This produces explicitly named partial smoke outputs; it is not a full submission.
+
+Maintainers can regenerate the notebook from this release's source files with
+`python scripts/build_reproduction_notebook.py`. This build-time helper is not
+called by the notebook.
 
 ## Method
 
@@ -87,7 +105,7 @@ The official training annotations remain in the user-supplied dataset.
 ## Layout
 
 ```text
-reproduce.ipynb          end-to-end inference notebook
+reproduce.ipynb          complete inference code in executable notebook cells
 requirements.txt        pinned environment
 src/filaments/          data, models, inference, post-processing, metrics
 scripts/                inference, reconstruction, audit and training entry points
